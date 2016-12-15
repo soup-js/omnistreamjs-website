@@ -1,0 +1,332 @@
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      padding-right: 50px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      flex-direction: column;
+    }
+
+    /*FONTS*/
+  * {
+    font-family: 'Raleway';
+    font-size: 25px;
+    font-weight: 100;
+  }
+
+  .omnistream {
+    font-size: 100px;
+    padding: 0px; 
+    margin: 0px;
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  p {
+    padding: 0px; 
+    margin: 0px;
+    font-weight: 300;
+  }
+
+  .innerText h2 {
+    font-size: 20px;
+  }
+
+  .innerText p {
+    font-size: 18px;
+  }
+
+  /*BACKGROUND*/
+  body { 
+    background: url('./images/stream.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /*NAVBAR*/
+  .logo {
+    margin-left: 20px;
+    filter: invert(1);
+    max-width: 120px;
+  }
+
+  img.logo:hover {
+    color: white;
+  }
+
+  .navbar {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: #2a2730;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+  }
+
+  .right-navbar {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .footer-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .item-link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 100%;
+    font-weight: 100;
+  }
+
+  .navbar a {
+      text-decoration: none;
+      padding: 0;
+      margin: 0;
+      color: #999784;
+  }
+
+  .navbar a:hover {
+    color: white;
+  }
+
+  .button {
+    background-color: rgba(255,255,255, 0.5);
+    margin-top: 30px;
+    color: #2a6952;
+    padding: 25px;
+    border: 2px solid #2a6952;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+
+  .button:hover {
+    background-color: rgb(224, 202, 172);
+    color: black;
+    }
+
+    p.above-button {
+      padding-bottom: 40px;
+    }
+
+  /*MAIN SECTION*/
+
+  .main {
+    color: #2a6952;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+  }
+
+  /*ABOUT US*/
+  .the-mission {
+    background-color: #fafafa;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+  }
+
+  .the-mission p {
+    font-size: 20px;
+  }
+
+
+  /*DIAGRAM*/
+
+  #rows {
+    background-color: #fafafa;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .row2 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .text {
+    width: 50%;
+  }
+
+  .innerText {
+    margin: 25px;
+  }
+
+  .image {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .simple-image {
+    max-width: 85%;
+    max-height: 85%;
+  }
+
+  .row {
+    height: 350px;
+  }
+
+  /*FOOTER*/
+
+  .footer {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: #2a2730;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+  }
+
+  .profile {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #999784;
+    margin-right: 8px;
+  }
+
+  span {
+      margin-right: 8px;
+      font-size: 20px;
+  }
+
+  a.profile:hover {
+    color: white;
+    text-decoration: underline;
+  }
+
+  .item-link-footer {
+    padding-top: 10px;
+    margin: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #about-me-placeholder {
+    height: 40px;
+  }
+
+#hamburger {
+  color: #bfbeba;
+  display: none;
+}
+
+  /*MEDIA QUERIES*/
+@media (max-width: 700px) {
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content {
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .omnistream {
+    font-size: 3em;
+    padding-right: 20px;
+  }
+
+  .above-button {
+    text-align: center;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    height: 100%;
+   }
+
+  .text {
+    width: 100%;
+  }
+
+ .image {
+    width: 100%;
+    height: 100%; 
+    flex: 1;
+  }
+
+  #rows {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile {
+    font-size: 12px;
+  }
+
+  p.profile {
+    font-size:15px;
+  }
+
+   span {
+      margin-right: 25px;
+      font-size: 20px;
+  }
+
+  .right-navbar {
+    display: none;
+  }
+
+  #hamburger {
+    width: 20px;
+    display: flex;
+    font-size: 1.2em;
+    padding-right: 30px;
+  }
+    #hamburger:hover {
+      color: white;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
