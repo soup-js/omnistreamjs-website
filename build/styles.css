@@ -9,7 +9,10 @@
       justify-content: flex-end;
       flex-direction: column;
     }
-
+    .about-us {
+      padding-top: 30px;
+    }
+  
     /*FONTS*/
   * {
     font-family: 'Raleway';
@@ -144,11 +147,17 @@
     background-color: #fafafa;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
+  }
+
+  #important {
+    color:#5395dc;
+    font-size: 18px;
   }
 
   .the-mission p {
     font-size: 20px;
+    font-weight: 500;
   }
 
 
@@ -216,7 +225,7 @@
     margin-right: 8px;
   }
 
-  span {
+  span.profile {
       margin-right: 8px;
       font-size: 20px;
   }
@@ -300,7 +309,7 @@
     font-size:15px;
   }
 
-   span {
+   span.profile {
       margin-right: 25px;
       font-size: 20px;
   }
