@@ -1,11 +1,26 @@
 import React, { Component } from 'react';
+import Menu from './Menu'
+
+
+
 
 export default class Navbar extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { renderHamburger: false }
+    this.hamburger = this.hamburger.bind(this)
+  }
+
+  hamburger() {
+    this.state.renderHamburger === true ? this.setState({ renderHamburger: false }) : this.setState({ renderHamburger: true })
+  }
+
   render() {
     return (
+      <div>
       <div className='navbar'>
         <img className='logo' src='./images/omni_logo.png'></img>
-        <i id='hamburger' className='fa fa-bars'/>
+        <i onClick={this.hamburger} id='hamburger' className='fa fa-bars' />
         <nav className='right-navbar'>
           <div className="item-link">
             <a href="#">HOME</a>
@@ -17,7 +32,10 @@ export default class Navbar extends Component {
             <a href="mailto:omnistreamjs@gmail.com">CONTACT</a>
           </div>
         </nav>
-      </div>
+        </div>
+         {this.state.renderHamburger === true ? <Menu className= 'menu'/> : undefined }
+      </div>  
+      
     )
   };
 }

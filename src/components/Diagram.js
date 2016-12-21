@@ -37,7 +37,7 @@ export default class Diagram extends Component {
 
             </div>
           </div>
-          <div className='image'><img className='simple-image' src='./images/simple-diagram.png' /></div>
+          <div className='image'><img className='simple-image' src='./images/gif.gif' /></div>
         </div>
 
         <div className='row row1'>
@@ -53,7 +53,7 @@ export default class Diagram extends Component {
               <hr className='bottom-line' />
             </div>
           </div>
-          <div className='image'><img className='simple-image' src='./images/simple-diagram.png' /></div>
+          <div className='image'><img className='simple-image' src='./images/code.png' /></div>
         </div>
 
       </div>
