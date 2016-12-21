@@ -20,8 +20,9 @@ export default class Diagram extends Component {
               <hr className='bottom-line' />
             </div>
           </div>
-          <div className='image'><img className='simple-image' src='./images/simple-diagram.png' /></div>
-        </div>
+          <div className='image'>
+            <img className='simple-image' src='./images/simple-diagram.png' /></div>
+          </div>
 
         <div className='row row2'>
           <div className='text'>
