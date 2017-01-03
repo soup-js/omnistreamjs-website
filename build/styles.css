@@ -283,7 +283,9 @@
   .row {
     display: flex;
     flex-direction: column;
-    justify-content: center;  
+    justify-content: center;
+      min-height: 300px;
+  
     height: 100%;
    }
 
@@ -293,6 +295,7 @@
 
  .image {
     width: 100%;
+    min-height: 300px;
     height: 100%; 
     flex: 1;
   }
@@ -300,6 +303,7 @@
   #rows {
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
   .profile {
     font-size: 12px;
