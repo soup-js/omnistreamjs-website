@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import Menu from './Menu'
 
-
-
-
 export default class Navbar extends Component {
   constructor(props) {
     super(props)
@@ -33,7 +30,7 @@ export default class Navbar extends Component {
           </div>
         </nav>
         </div>
-         {this.state.renderHamburger === true ? <Menu className= 'menu'/> : undefined }
+         { this.state.renderHamburger === true ? <Menu className= 'menu'/> : undefined }
       </div>  
       
     )
